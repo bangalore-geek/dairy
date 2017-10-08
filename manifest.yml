@@ -1,6 +1,6 @@
 ---
 applications:
 - name: dairy-web
-  memory: 512M
+  memory: 1024M
   buildpack: java_buildpack
   path: target/dairy-0.0.1-SNAPSHOT.jar
