@@ -1,7 +1,6 @@
 package com.dairy.domain;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "users")
@@ -14,7 +13,7 @@ public class User {
 	private String password;
 	private String email;
 	private Boolean active;
-	@DBRef
+	
 	private Role role;
 
 	public Boolean getActive() {
